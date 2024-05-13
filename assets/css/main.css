@@ -1073,11 +1073,17 @@ section {
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+.featured-services {
+  background: rgb(239, 212, 38);
+  height: 100%;
+}
 .featured-services .service-item {
   padding: 30px;
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .featured-services .service-item .icon {
@@ -1091,19 +1097,19 @@ section {
 }
 
 .featured-services .service-item h4 {
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .featured-services .service-item h4 a {
-  color: var(--color-secondary);
+  color: rgb(239, 212, 38);
   transition: ease-in-out 0.3s;
 }
 
 .featured-services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -1115,6 +1121,15 @@ section {
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
 }
+
+/* Adjustments for responsive behavior */
+@media (max-width: 991px) {
+  .featured-services .service-item {
+    width: auto; /* Allow Bootstrap to control the width */
+    min-width: 0; /* Override min-width */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -2073,6 +2088,7 @@ section {
 .team .team-member .member-img {
   border-radius: 8px;
   overflow: hidden;
+  margin: 5px;
 }
 
 .team .team-member .social {
