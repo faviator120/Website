@@ -1,0 +1,3 @@
+Make all changes in assets/index.html
+in cmd write
+firebase deploy
